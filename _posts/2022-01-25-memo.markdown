@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: single
 title: "Memo"
 date: 2022-01-25 10:27:35 +0900
 categories: memo
+sidebar:
+  nav: "docs"
 ---
 
 반응형 웹 디자인 간단 자료
