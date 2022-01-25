@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://domavaem.github.io/TIL/feed.xml" rel="self" type="application/atom+xml" /><link href="https://domavaem.github.io/TIL/" rel="alternate" type="text/html" /><updated>2022-01-25T10:48:44+09:00</updated><id>https://domavaem.github.io/TIL/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://domavaem.github.io/TIL/jekyll/update/2022/01/25/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-01-25T10:27:35+09:00</published><updated>2022-01-25T10:27:35+09:00</updated><id>https://domavaem.github.io/TIL/jekyll/update/2022/01/25/welcome-to-jekyll</id><content type="html" xml:base="https://domavaem.github.io/TIL/jekyll/update/2022/01/25/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://domavaem.github.io/TIL/feed.xml" rel="self" type="application/atom+xml" /><link href="https://domavaem.github.io/TIL/" rel="alternate" type="text/html" /><updated>2022-01-25T11:02:09+09:00</updated><id>https://domavaem.github.io/TIL/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Memo</title><link href="https://domavaem.github.io/TIL/memo/2022/01/25/memo.html" rel="alternate" type="text/html" title="Memo" /><published>2022-01-25T10:27:35+09:00</published><updated>2022-01-25T10:27:35+09:00</updated><id>https://domavaem.github.io/TIL/memo/2022/01/25/memo</id><content type="html" xml:base="https://domavaem.github.io/TIL/memo/2022/01/25/memo.html"><![CDATA[<p>반응형 웹 디자인 간단 자료</p>
+
+<p>https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns?hl=ko
+https://css-tricks.com/responsive-data-tables/
+https://divante.com/blog/responsive-web-design-table-design/</p>
+
+<p>웹플로우, 워드프레스, 이런데서도 디자인 참고 얼마든지 가능</p>
+
+<hr />
+
+<p>vscode 자동정렬 고장나면 확인
+Editor: Default Formatter
+플러터: Dart
+웹: Prettier.</p>
+
+<hr />
+
+<h2 id="git-fetch-tags-all">git fetch –tags –all</h2>
+
+<hr />
+
+<p>디버그 모드에서 콘솔 출력 메세지 타입별 색상</p>]]></content><author><name></name></author><category term="memo" /><summary type="html"><![CDATA[반응형 웹 디자인 간단 자료]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="https://domavaem.github.io/TIL/jekyll/update/2022/01/25/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-01-25T10:27:35+09:00</published><updated>2022-01-25T10:27:35+09:00</updated><id>https://domavaem.github.io/TIL/jekyll/update/2022/01/25/welcome-to-jekyll</id><content type="html" xml:base="https://domavaem.github.io/TIL/jekyll/update/2022/01/25/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
@@ -57,4 +78,14 @@ export RUBY_CONFIGURE_OPTS=”–with-openssl-dir=$(brew –prefix openssl@1.1)�
 
 <h1 id="upgrade-all-global-gems">Upgrade all global gems.</h1>
 
-<p>gem update</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[ERROR: While executing gem … (Errno::ENOTEMPTY) Directory not empty @ dir_s_rmdir - /Users/spo/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/bundler-2.3.5 incompatible library version - /Users/spo/.gem/ruby/3.0.0/gems/ffi-1.15.5/lib/ffi_c.bundle (LoadError) cannot load such file – 3.0/ffi_c (LoadError) $ gem pristine ffi 이걸로 안되면 $ gem uninstall ffi $ gem install ffi rbenv 설치 후 Check your installation curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash 설치 확인하면 아래의 에러가 날 때 The directory `/Users/spo/.rbenv/shims’ must be present in PATH for rbenv to work. 해결법은 I added these lines at the end of my .zshrc file (for those of us who are using oh my zsh) ’# rbenv configuration eval “$(rbenv init -)” export RUBY_CONFIGURE_OPTS=”–with-openssl-dir=$(brew –prefix openssl@1.1)” 터미널 재실행 필수 sudo gem install jekyll bundler Upgrade just RubyGems gems. gem update –system Upgrade all global gems. gem update]]></summary></entry></feed>
+<p>gem update</p>
+
+<hr />
+
+<p>webrick 로드 실패 에러
+bundle add webrick으로 webrick을 추가</p>
+
+<hr />
+
+<p>baseurl: “/TIL”
+대소문자 구분 안하면 어디선가 문제 생김. css 로드가 안된다든가…</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[ERROR: While executing gem … (Errno::ENOTEMPTY) Directory not empty @ dir_s_rmdir - /Users/spo/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/bundler-2.3.5 incompatible library version - /Users/spo/.gem/ruby/3.0.0/gems/ffi-1.15.5/lib/ffi_c.bundle (LoadError) cannot load such file – 3.0/ffi_c (LoadError) $ gem pristine ffi 이걸로 안되면 $ gem uninstall ffi $ gem install ffi rbenv 설치 후 Check your installation curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash 설치 확인하면 아래의 에러가 날 때 The directory `/Users/spo/.rbenv/shims’ must be present in PATH for rbenv to work. 해결법은 I added these lines at the end of my .zshrc file (for those of us who are using oh my zsh) ’# rbenv configuration eval “$(rbenv init -)” export RUBY_CONFIGURE_OPTS=”–with-openssl-dir=$(brew –prefix openssl@1.1)” 터미널 재실행 필수 sudo gem install jekyll bundler Upgrade just RubyGems gems. gem update –system Upgrade all global gems. gem update webrick 로드 실패 에러 bundle add webrick으로 webrick을 추가 baseurl: “/TIL” 대소문자 구분 안하면 어디선가 문제 생김. css 로드가 안된다든가…]]></summary></entry></feed>

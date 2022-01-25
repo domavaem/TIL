@@ -49,3 +49,13 @@ gem update --system
 # Upgrade all global gems.
 
 gem update
+
+---
+
+webrick 로드 실패 에러
+bundle add webrick으로 webrick을 추가
+
+---
+
+baseurl: "/TIL"
+대소문자 구분 안하면 어디선가 문제 생김. css 로드가 안된다든가...

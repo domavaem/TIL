@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Memo"
+date: 2022-01-25 10:27:35 +0900
+categories: memo
+---
+
+반응형 웹 디자인 간단 자료
+
+https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns?hl=ko
+https://css-tricks.com/responsive-data-tables/
+https://divante.com/blog/responsive-web-design-table-design/
+
+웹플로우, 워드프레스, 이런데서도 디자인 참고 얼마든지 가능
+
+---
+
+vscode 자동정렬 고장나면 확인
+Editor: Default Formatter
+플러터: Dart
+웹: Prettier.
+
+---
+
+## git fetch --tags --all
+
+---
+
+디버그 모드에서 콘솔 출력 메세지 타입별 색상
