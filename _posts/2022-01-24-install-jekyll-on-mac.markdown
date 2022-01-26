@@ -2,7 +2,7 @@
 layout: single
 title: "Install Jekyll on Mac"
 date: 2022-01-24 12:30:32 +0900
-categories: jekyll update
+categories: memo
 sidebar:
   nav: "docs"
 ---

@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="TIL">
 <meta property="og:title" content="Install Jekyll on Mac">
-<meta property="og:url" content="https://domavaem.github.io/TIL/jekyll/update/2022/01/24/install-jekyll-on-mac.html">
+<meta property="og:url" content="https://domavaem.github.io/TIL/memo/2022/01/24/install-jekyll-on-mac.html">
 
 
   <meta property="og:description" content="ERROR: While executing gem … (Errno::ENOTEMPTY) Directory not empty @ dir_s_rmdir - /Users/spo/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/bundler-2.3.5  incompatible library version - /Users/spo/.gem/ruby/3.0.0/gems/ffi-1.15.5/lib/ffi_c.bundle (LoadError) cannot load such file – 3.0/ffi_c (LoadError)  $ gem pristine ffi 이걸로 안되면 $ gem uninstall ffi $ gem install ffi    rbenv 설치 후  Check your installation  curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash 설치 확인하면 아래의 에러가 날 때 The directory `/Users/spo/.rbenv/shims’ must be present in PATH for rbenv to work.  해결법은 I added these lines at the end of my .zshrc file (for those of us who are using oh my zsh)  ’# rbenv configuration  eval “$(rbenv init -)” export RUBY_CONFIGURE_OPTS=”–with-openssl-dir=$(brew –prefix openssl@1.1)”  터미널 재실행 필수    sudo gem install jekyll bundler    Upgrade just RubyGems gems.  gem update –system  Upgrade all global gems.  gem update    webrick 로드 실패 에러 bundle add webrick으로 webrick을 추가    baseurl: “/TIL” 대소문자 구분 안하면 어디선가 문제 생김. css 로드가 안된다든가…">
@@ -36,7 +36,7 @@
 
 
 
-<link rel="canonical" href="https://domavaem.github.io/TIL/jekyll/update/2022/01/24/install-jekyll-on-mac.html">
+<link rel="canonical" href="https://domavaem.github.io/TIL/memo/2022/01/24/install-jekyll-on-mac.html">
 
 
 
@@ -112,17 +112,7 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/TIL/docs/quick-start-guide/">Quick-Start Guide</a>
-            </li><li class="masthead__menu-item">
-              <a href="/TIL/year-archive/">Posts</a>
-            </li><li class="masthead__menu-item">
-              <a href="/TIL/categories/">Categories</a>
-            </li><li class="masthead__menu-item">
-              <a href="/TIL/tags/">Tags</a>
-            </li><li class="masthead__menu-item">
-              <a href="/TIL/page-archive/">Pages</a>
-            </li><li class="masthead__menu-item">
-              <a href="/TIL/collection-archive/">Collections</a>
+              <a href="/TIL/memo/">Memo</a>
             </li><li class="masthead__menu-item">
               <a href="https://domavaem.com">DOMAVAEM</a>
             </li></ul>
@@ -170,19 +160,13 @@
     
       <li>
         
-          <span class="nav__sub-title">Getting Started</span>
+          <span class="nav__sub-title">JavaScript</span>
         
 
         
         <ul>
           
-            <li><a href="/TIL/docs/quick-start-guide/">Quick-Start Guide</a></li>
-          
-            <li><a href="/TIL/docs/structure/">Structure</a></li>
-          
-            <li><a href="/TIL/docs/installation/">Installation</a></li>
-          
-            <li><a href="/TIL/docs/upgrading/">Upgrading</a></li>
+            <li><a href="/TIL/jekyll/welcome-to-jekyll">welcome</a></li>
           
         </ul>
         
@@ -190,21 +174,13 @@
     
       <li>
         
-          <span class="nav__sub-title">Customization</span>
+          <span class="nav__sub-title">React</span>
         
 
         
         <ul>
           
-            <li><a href="/TIL/docs/configuration/">Configuration</a></li>
-          
-            <li><a href="/TIL/docs/navigation/">Navigation</a></li>
-          
-            <li><a href="/TIL/docs/ui-text/">UI Text</a></li>
-          
-            <li><a href="/TIL/docs/authors/">Authors</a></li>
-          
-            <li><a href="/TIL/docs/layouts/">Layouts</a></li>
+            <li><a href="/TIL/react/2022/01/26/memo">Memo</a></li>
           
         </ul>
         
@@ -212,21 +188,13 @@
     
       <li>
         
-          <span class="nav__sub-title">Content</span>
+          <span class="nav__sub-title">CSS</span>
         
 
         
         <ul>
           
-            <li><a href="/TIL/docs/posts/">Working with Posts</a></li>
-          
-            <li><a href="/TIL/docs/pages/">Working with Pages</a></li>
-          
-            <li><a href="/TIL/docs/collections/">Working with Collections</a></li>
-          
-            <li><a href="/TIL/docs/helpers/">Helpers</a></li>
-          
-            <li><a href="/TIL/docs/utility-classes/">Utility Classes</a></li>
+            <li><a href="/TIL/memo/">temp</a></li>
           
         </ul>
         
@@ -234,37 +202,13 @@
     
       <li>
         
-          <span class="nav__sub-title">Extras</span>
+          <span class="nav__sub-title">Memo</span>
         
 
         
         <ul>
           
-            <li><a href="/TIL/docs/stylesheets/">Stylesheets</a></li>
-          
-            <li><a href="/TIL/docs/javascript/">JavaScript</a></li>
-          
-        </ul>
-        
-      </li>
-    
-      <li>
-        
-          <span class="nav__sub-title">Meta</span>
-        
-
-        
-        <ul>
-          
-            <li><a href="/TIL/docs/history/">History</a></li>
-          
-            <li><a href="/TIL/docs/contributing/">Contributing</a></li>
-          
-            <li><a href="/TIL/docs/docs-2-2/">Old 2.2 Docs</a></li>
-          
-            <li><a href="/TIL/docs/license/">License</a></li>
-          
-            <li><a href="/TIL/terms/">Terms &amp; Privacy Policy</a></li>
+            <li><a href="/TIL/memo/2022/01/25/memo">memo</a></li>
           
         </ul>
         

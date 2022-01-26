@@ -1,0 +1,52 @@
+---
+layout: single
+title: "Memo"
+date: 2022-01-26 10:27:35 +0900
+categories: react
+sidebar:
+  nav: "docs"
+  title: "Memo"
+---
+
+# 리액트 메모
+
+reducer 안에서 state를 바꾸고 리턴하지 말고
+state를 복사->수정-> 수정된 값을 반환
+Object.assign, ...imutable 라이브러리, ...
+event.preventDefault();//기본 동작 막기. a태그의 기본 동작 방지 등의 목적
+Create React App - Proxy
+
+---
+
+props를 통해 컴포넌트에 값 전달
+
+useState()로 컴포넌트에서 사용하는 값 관리
+
+- 합수형 업데이트: 최적화
+
+input 상태 관리 시 value도 업데이트
+
+React에서는 객체를 직접 업데이트 하지 말고 새로운 객체를 할당
+setInputs({
+...inputs,
+[name]: value
+});
+
+useRef 로 특정 DOM 접근
+map 사용 시 key 설정
+
+useRef로 만들어진 객체는 React가 만든 전역 저장소에 저장되기 때문에 함수를 재 호출하더라도 마지막으로 업데이트한 current 값이 유지
+useRef로 관리되는 변수는 값이 바뀌어도 컴포넌트가 리렌더링 되지 않음
+
+---
+
+React.memo 사용 시
+eps 에 users 가 들어있기 때문에 배열이 바뀔때마다 함수가 새로 만들어지는건, 당연합니다.
+
+그렇다면! 이걸 최적화하고 싶다면 어떻게해야 할까요?
+
+바로 deps 에서 users 를 지우고, 함수들에서 현재 useState 로 관리하는 users 를 참조하지 않게 하는것입니다. 그건 또 어떻게 할까요? 힌트는, useState 를 배울때 다뤘던 내용이에요.
+
+정답은 바로, 함수형 업데이트입니다.
+
+함수형 업데이트를 하게 되면, setUsers 에 등록하는 콜백함수의 파라미터에서 최신 users 를 참조 할 수 있기 때문에 deps 에 users 를 넣지 않아도 된답니다.

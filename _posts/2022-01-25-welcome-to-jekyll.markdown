@@ -2,7 +2,7 @@
 layout: single
 title: "Welcome to Jekyll!"
 date: 2022-01-25 10:27:35 +0900
-categories: jekyll update
+categories: jekyll
 sidebar:
   nav: "docs"
 ---
