@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://domavaem.github.io/TIL/feed.xml" rel="self" type="application/atom+xml" /><link href="https://domavaem.github.io/TIL/" rel="alternate" type="text/html" /><updated>2022-01-26T10:48:05+09:00</updated><id>https://domavaem.github.io/TIL/feed.xml</id><title type="html">TIL</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Memo</title><link href="https://domavaem.github.io/TIL/react/2022/01/26/memo.html" rel="alternate" type="text/html" title="Memo" /><published>2022-01-26T10:27:35+09:00</published><updated>2022-01-26T10:27:35+09:00</updated><id>https://domavaem.github.io/TIL/react/2022/01/26/memo</id><content type="html" xml:base="https://domavaem.github.io/TIL/react/2022/01/26/memo.html"><![CDATA[<h1 id="리액트-메모">리액트 메모</h1>
-
-<p>reducer 안에서 state를 바꾸고 리턴하지 말고
-state를 복사-&gt;수정-&gt; 수정된 값을 반환
-Object.assign, …imutable 라이브러리, …
-event.preventDefault();//기본 동작 막기. a태그의 기본 동작 방지 등의 목적
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://domavaem.github.io/TIL/feed.xml" rel="self" type="application/atom+xml" /><link href="https://domavaem.github.io/TIL/" rel="alternate" type="text/html" /><updated>2022-01-27T10:38:46+09:00</updated><id>https://domavaem.github.io/TIL/feed.xml</id><title type="html">TIL</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">리액트 메모</title><link href="https://domavaem.github.io/TIL/react/2022/01/26/memo.html" rel="alternate" type="text/html" title="리액트 메모" /><published>2022-01-26T10:27:35+09:00</published><updated>2022-01-26T10:27:35+09:00</updated><id>https://domavaem.github.io/TIL/react/2022/01/26/memo</id><content type="html" xml:base="https://domavaem.github.io/TIL/react/2022/01/26/memo.html"><![CDATA[<p>reducer 안에서 state를 바꾸고 리턴하지 말고<br />
+state를 복사-&gt;수정-&gt; 수정된 값을 반환<br />
+Object.assign, …imutable 라이브러리, …<br />
+event.preventDefault(); //기본 동작 막기. a태그의 기본 동작 방지 등의 목적<br />
 Create React App - Proxy</p>
 
 <hr />
@@ -12,27 +10,27 @@ Create React App - Proxy</p>
 
 <p>useState()로 컴포넌트에서 사용하는 값 관리</p>
 
-<ul>
-  <li>합수형 업데이트: 최적화</li>
-</ul>
+<p>합수형 업데이트: 최적화</p>
 
 <p>input 상태 관리 시 value도 업데이트</p>
 
-<p>React에서는 객체를 직접 업데이트 하지 말고 새로운 객체를 할당
-setInputs({
-…inputs,
-[name]: value
-});</p>
+<p>React에서는 객체를 직접 업데이트 하지 말고 새로운 객체를 할당</p>
 
-<p>useRef 로 특정 DOM 접근
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">setInputs</span><span class="p">({</span>
+  <span class="p">...</span><span class="nx">inputs</span><span class="p">,</span>
+  <span class="p">[</span><span class="nx">name</span><span class="p">]:</span> <span class="nx">value</span><span class="p">,</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>useRef 로 특정 DOM 접근<br />
 map 사용 시 key 설정</p>
 
-<p>useRef로 만들어진 객체는 React가 만든 전역 저장소에 저장되기 때문에 함수를 재 호출하더라도 마지막으로 업데이트한 current 값이 유지
+<p>useRef로 만들어진 객체는 React가 만든 전역 저장소에 저장되기 때문에 함수를 재 호출하더라도 마지막으로 업데이트한 current 값이 유지<br />
 useRef로 관리되는 변수는 값이 바뀌어도 컴포넌트가 리렌더링 되지 않음</p>
 
 <hr />
 
-<p>React.memo 사용 시
+<p>React.memo 사용 시<br />
 eps 에 users 가 들어있기 때문에 배열이 바뀔때마다 함수가 새로 만들어지는건, 당연합니다.</p>
 
 <p>그렇다면! 이걸 최적화하고 싶다면 어떻게해야 할까요?</p>
@@ -41,7 +39,11 @@ eps 에 users 가 들어있기 때문에 배열이 바뀔때마다 함수가 새
 
 <p>정답은 바로, 함수형 업데이트입니다.</p>
 
-<p>함수형 업데이트를 하게 되면, setUsers 에 등록하는 콜백함수의 파라미터에서 최신 users 를 참조 할 수 있기 때문에 deps 에 users 를 넣지 않아도 된답니다.</p>]]></content><author><name></name></author><category term="react" /><summary type="html"><![CDATA[리액트 메모]]></summary></entry><entry><title type="html">Memo</title><link href="https://domavaem.github.io/TIL/memo/2022/01/25/memo.html" rel="alternate" type="text/html" title="Memo" /><published>2022-01-25T10:27:35+09:00</published><updated>2022-01-25T10:27:35+09:00</updated><id>https://domavaem.github.io/TIL/memo/2022/01/25/memo</id><content type="html" xml:base="https://domavaem.github.io/TIL/memo/2022/01/25/memo.html"><![CDATA[<p>반응형 웹 디자인 간단 자료</p>
+<p>함수형 업데이트를 하게 되면, setUsers 에 등록하는 콜백함수의 파라미터에서 최신 users 를 참조 할 수 있기 때문에 deps 에 users 를 넣지 않아도 된답니다.</p>
+
+<hr />
+
+<p>라우팅 작업 확인할 때는 서버를 아예 재시작</p>]]></content><author><name></name></author><category term="react" /><summary type="html"><![CDATA[reducer 안에서 state를 바꾸고 리턴하지 말고 state를 복사-&gt;수정-&gt; 수정된 값을 반환 Object.assign, …imutable 라이브러리, … event.preventDefault(); //기본 동작 막기. a태그의 기본 동작 방지 등의 목적 Create React App - Proxy]]></summary></entry><entry><title type="html">Memo</title><link href="https://domavaem.github.io/TIL/memo/2022/01/25/memo.html" rel="alternate" type="text/html" title="Memo" /><published>2022-01-25T10:27:35+09:00</published><updated>2022-01-25T10:27:35+09:00</updated><id>https://domavaem.github.io/TIL/memo/2022/01/25/memo</id><content type="html" xml:base="https://domavaem.github.io/TIL/memo/2022/01/25/memo.html"><![CDATA[<p>반응형 웹 디자인 간단 자료</p>
 
 <p>https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns?hl=ko
 https://css-tricks.com/responsive-data-tables/
@@ -51,14 +53,15 @@ https://divante.com/blog/responsive-web-design-table-design/</p>
 
 <hr />
 
-<p>vscode 자동정렬 고장나면 확인
-Editor: Default Formatter
-플러터: Dart
+<p>vscode 자동정렬 고장나면 확인<br />
+Editor: Default Formatter<br />
+플러터: Dart<br />
 웹: Prettier.</p>
 
 <hr />
 
-<h2 id="git-fetch-tags-all">git fetch –tags –all</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch --tags --all
+</code></pre></div></div>
 
 <hr />
 

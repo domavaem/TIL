@@ -18,14 +18,16 @@ https://divante.com/blog/responsive-web-design-table-design/
 
 ---
 
-vscode 자동정렬 고장나면 확인
-Editor: Default Formatter
-플러터: Dart
+vscode 자동정렬 고장나면 확인  
+Editor: Default Formatter  
+플러터: Dart  
 웹: Prettier.
 
 ---
 
-## git fetch --tags --all
+```
+git fetch --tags --all
+```
 
 ---
 

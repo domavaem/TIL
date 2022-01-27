@@ -6,7 +6,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Memo",
-        "excerpt":"반응형 웹 디자인 간단 자료   https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns?hl=ko https://css-tricks.com/responsive-data-tables/ https://divante.com/blog/responsive-web-design-table-design/   웹플로우, 워드프레스, 이런데서도 디자인 참고 얼마든지 가능     vscode 자동정렬 고장나면 확인 Editor: Default Formatter 플러터: Dart 웹: Prettier.     git fetch –tags –all     디버그 모드에서 콘솔 출력 메세지 타입별 색상  ","categories": ["memo"],
+        "excerpt":"반응형 웹 디자인 간단 자료   https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns?hl=ko https://css-tricks.com/responsive-data-tables/ https://divante.com/blog/responsive-web-design-table-design/   웹플로우, 워드프레스, 이런데서도 디자인 참고 얼마든지 가능     vscode 자동정렬 고장나면 확인  Editor: Default Formatter  플러터: Dart  웹: Prettier.     git fetch --tags --all     디버그 모드에서 콘솔 출력 메세지 타입별 색상  ","categories": ["memo"],
         "tags": [],
         "url": "/TIL/memo/2022/01/25/memo.html",
         "teaser": null
@@ -17,8 +17,8 @@ var store = [{
         "url": "/TIL/jekyll/2022/01/25/welcome-to-jekyll.html",
         "teaser": null
       },{
-        "title": "Memo",
-        "excerpt":"리액트 메모 reducer 안에서 state를 바꾸고 리턴하지 말고 state를 복사-&gt;수정-&gt; 수정된 값을 반환 Object.assign, …imutable 라이브러리, … event.preventDefault();//기본 동작 막기. a태그의 기본 동작 방지 등의 목적 Create React App - Proxy props를 통해 컴포넌트에 값 전달 useState()로 컴포넌트에서 사용하는 값 관리 합수형 업데이트: 최적화 input 상태 관리 시 value도 업데이트...","categories": ["react"],
+        "title": "리액트 메모",
+        "excerpt":"reducer 안에서 state를 바꾸고 리턴하지 말고 state를 복사-&gt;수정-&gt; 수정된 값을 반환 Object.assign, …imutable 라이브러리, … event.preventDefault(); //기본 동작 막기. a태그의 기본 동작 방지 등의 목적 Create React App - Proxy props를 통해 컴포넌트에 값 전달 useState()로 컴포넌트에서 사용하는 값 관리 합수형 업데이트: 최적화 input 상태 관리 시 value도 업데이트 React에서는...","categories": ["react"],
         "tags": [],
         "url": "/TIL/react/2022/01/26/memo.html",
         "teaser": null
