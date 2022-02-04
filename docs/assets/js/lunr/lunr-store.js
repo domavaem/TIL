@@ -22,4 +22,10 @@ var store = [{
         "tags": [],
         "url": "/TIL/react/2022/01/26/memo.html",
         "teaser": null
+      },{
+        "title": "초기 설치",
+        "excerpt":"React 일단은 그냥 cra 사용 npx create-react-app [project name] cd [project name] npm install react-router-dom@6 mobx npm install mobx npm install mobx-react npm install mobx-react-lite // 함수형 컴포넌트만 지원 styled-components npm install styled-components mui emotion 사용이 default npm install @mui/material @emotion/react @emotion/styled styled-components를 사용한다면 아래 버전 설치 npm install @mui/material...","categories": ["react"],
+        "tags": [],
+        "url": "/TIL/react/2022/02/04/install.html",
+        "teaser": null
       }]

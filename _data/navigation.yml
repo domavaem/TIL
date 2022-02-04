@@ -14,8 +14,8 @@ docs:
     children:
       - title: "Memo"
         url: /react/2022/01/26/memo
-      # - title: "Navigation"
-      #   url: /navigation/
+      - title: "초기 설치"
+        url: /react/2022/02/04/install
   - title: CSS
     children:
       - title: "temp"
