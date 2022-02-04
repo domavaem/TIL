@@ -27,6 +27,12 @@ npm install mobx-react
 npm install mobx-react-lite // 함수형 컴포넌트만 지원
 ```
 
+### axios
+
+```
+npm install axios
+```
+
 ### styled-components
 
 ```
@@ -45,4 +51,12 @@ styled-components를 사용한다면 아래 버전 설치
 
 ```
 npm install @mui/material @mui/styled-engine-sc styled-components
+```
+
+# 그 밖에 자주 쓰이는 패키지들
+
+### bcrypt
+
+```
+npm install bcryptjs
 ```
