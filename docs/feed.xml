@@ -1,10 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://domavaem.github.io/TIL/feed.xml" rel="self" type="application/atom+xml" /><link href="https://domavaem.github.io/TIL/" rel="alternate" type="text/html" /><updated>2022-02-04T18:47:59+09:00</updated><id>https://domavaem.github.io/TIL/feed.xml</id><title type="html">TIL</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">초기 설치</title><link href="https://domavaem.github.io/TIL/react/2022/02/04/install.html" rel="alternate" type="text/html" title="초기 설치" /><published>2022-02-04T10:27:35+09:00</published><updated>2022-02-04T10:27:35+09:00</updated><id>https://domavaem.github.io/TIL/react/2022/02/04/install</id><content type="html" xml:base="https://domavaem.github.io/TIL/react/2022/02/04/install.html"><![CDATA[<h3 id="react">React</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://domavaem.github.io/TIL/feed.xml" rel="self" type="application/atom+xml" /><link href="https://domavaem.github.io/TIL/" rel="alternate" type="text/html" /><updated>2022-02-07T17:29:12+09:00</updated><id>https://domavaem.github.io/TIL/feed.xml</id><title type="html">TIL</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">초기 설치</title><link href="https://domavaem.github.io/TIL/react/2022/02/04/install.html" rel="alternate" type="text/html" title="초기 설치" /><published>2022-02-04T10:27:35+09:00</published><updated>2022-02-04T10:27:35+09:00</updated><id>https://domavaem.github.io/TIL/react/2022/02/04/install</id><content type="html" xml:base="https://domavaem.github.io/TIL/react/2022/02/04/install.html"><![CDATA[<h3 id="react">React</h3>
 
-<p>일단은 그냥 cra 사용</p>
+<p>일단은 그냥 CRA 사용</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx create-react-app [project name]
 cd [project name]
 npm install react-router-dom@6
+</code></pre></div></div>
+
+<p>타입스크립트 기반 CRA</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx create-react-app [project name] --template typescript
 </code></pre></div></div>
 
 <h3 id="mobx">mobx</h3>
@@ -42,7 +47,7 @@ npm install mobx-react-lite // 함수형 컴포넌트만 지원
 <h3 id="bcrypt">bcrypt</h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install bcryptjs
-</code></pre></div></div>]]></content><author><name></name></author><category term="react" /><summary type="html"><![CDATA[React 일단은 그냥 cra 사용 npx create-react-app [project name] cd [project name] npm install react-router-dom@6 mobx npm install mobx npm install mobx-react npm install mobx-react-lite // 함수형 컴포넌트만 지원 axios npm install axios styled-components npm install styled-components mui emotion 사용이 default npm install @mui/material @emotion/react @emotion/styled styled-components를 사용한다면 아래 버전 설치 npm install @mui/material @mui/styled-engine-sc styled-components 그 밖에 자주 쓰이는 패키지들 bcrypt npm install bcryptjs]]></summary></entry><entry><title type="html">리액트 메모</title><link href="https://domavaem.github.io/TIL/react/2022/01/26/memo.html" rel="alternate" type="text/html" title="리액트 메모" /><published>2022-01-26T10:27:35+09:00</published><updated>2022-01-26T10:27:35+09:00</updated><id>https://domavaem.github.io/TIL/react/2022/01/26/memo</id><content type="html" xml:base="https://domavaem.github.io/TIL/react/2022/01/26/memo.html"><![CDATA[<p>reducer 안에서 state를 바꾸고 리턴하지 말고<br />
+</code></pre></div></div>]]></content><author><name></name></author><category term="react" /><summary type="html"><![CDATA[React 일단은 그냥 CRA 사용 npx create-react-app [project name] cd [project name] npm install react-router-dom@6 타입스크립트 기반 CRA npx create-react-app [project name] --template typescript mobx npm install mobx npm install mobx-react npm install mobx-react-lite // 함수형 컴포넌트만 지원 axios npm install axios styled-components npm install styled-components mui emotion 사용이 default npm install @mui/material @emotion/react @emotion/styled styled-components를 사용한다면 아래 버전 설치 npm install @mui/material @mui/styled-engine-sc styled-components 그 밖에 자주 쓰이는 패키지들 bcrypt npm install bcryptjs]]></summary></entry><entry><title type="html">리액트 메모</title><link href="https://domavaem.github.io/TIL/react/2022/01/26/memo.html" rel="alternate" type="text/html" title="리액트 메모" /><published>2022-01-26T10:27:35+09:00</published><updated>2022-01-26T10:27:35+09:00</updated><id>https://domavaem.github.io/TIL/react/2022/01/26/memo</id><content type="html" xml:base="https://domavaem.github.io/TIL/react/2022/01/26/memo.html"><![CDATA[<p>reducer 안에서 state를 바꾸고 리턴하지 말고<br />
 state를 복사-&gt;수정-&gt; 수정된 값을 반환<br />
 Object.assign, …imutable 라이브러리, …<br />
 event.preventDefault(); //기본 동작 막기. a태그의 기본 동작 방지 등의 목적<br />
