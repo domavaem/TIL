@@ -28,4 +28,10 @@ var store = [{
         "tags": [],
         "url": "/TIL/react/2022/02/04/install.html",
         "teaser": null
+      },{
+        "title": "Flutter CLI",
+        "excerpt":"flutter run -d web-server flutter run -d web-server --web-renderer html  flutter build web flutter build web --web-renderer html  ","categories": ["flutter"],
+        "tags": [],
+        "url": "/TIL/flutter/2022/02/14/cli.html",
+        "teaser": null
       }]

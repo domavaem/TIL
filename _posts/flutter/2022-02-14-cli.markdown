@@ -1,0 +1,18 @@
+---
+layout: single
+title: "Flutter CLI"
+date: 2022-02-14 10:27:35 +0900
+categories: flutter
+sidebar:
+  nav: "docs"
+  title: "CLI"
+---
+
+
+```
+flutter run -d web-server
+flutter run -d web-server --web-renderer html
+
+flutter build web
+flutter build web --web-renderer html
+```

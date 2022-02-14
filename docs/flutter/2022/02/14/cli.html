@@ -9,22 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>TIL</title>
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<!-- begin _includes/seo.html --><title>Flutter CLI - TIL</title>
+<meta name="description" content="``` flutter run -d web-server flutter run -d web-server –web-renderer html">
 
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="TIL">
-<meta property="og:title" content="TIL">
-<meta property="og:url" content="https://domavaem.github.io/TIL/">
+<meta property="og:title" content="Flutter CLI">
+<meta property="og:url" content="https://domavaem.github.io/TIL/flutter/2022/02/14/cli.html">
 
 
-  <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
-
-
-
+  <meta property="og:description" content="``` flutter run -d web-server flutter run -d web-server –web-renderer html">
 
 
 
@@ -32,9 +29,14 @@
 
 
 
+  <meta property="article:published_time" content="2022-02-14T10:27:35+09:00">
 
 
-<link rel="canonical" href="https://domavaem.github.io/TIL/">
+
+
+
+
+<link rel="canonical" href="https://domavaem.github.io/TIL/flutter/2022/02/14/cli.html">
 
 
 
@@ -85,7 +87,7 @@
 
   </head>
 
-  <body class="layout--home">
+  <body class="layout--single">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -138,177 +140,173 @@
 
 <div id="main" role="main">
   
-
-
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title"></h1>
-    
-    
-
-
-<h3 class="archive__subtitle">Recent Posts</h3>
-
-
-
-
-<div class="entries-list">
+  <div class="sidebar sticky">
+  
   
     
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/TIL/flutter/2022/02/14/cli.html" rel="permalink">Flutter CLI
-</a>
       
-    </h2>
+      
+      
     
+      
+      
+      
+      
+    
+    
+      
 
+<nav class="nav__list">
+  <h3 class="nav__title" style="padding-left: 0;">CLI</h3>
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">JavaScript</span>
+        
 
-    <p class="archive__item-excerpt" itemprop="description">```
-flutter run -d web-server
-flutter run -d web-server –web-renderer html
-</p>
-  </article>
-</div>
+        
+        <ul>
+          
+            <li><a href="/TIL/jekyll/welcome-to-jekyll">welcome</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">React</span>
+        
 
+        
+        <ul>
+          
+            <li><a href="/TIL/react/2022/01/26/memo">Memo</a></li>
+          
+            <li><a href="/TIL/react/2022/02/04/install">초기 설치</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">CSS</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/TIL/memo/">temp</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Flutter</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/TIL/flutter/2022/02/14/cli">CLI</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Memo</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/TIL/memo/2022/01/25/memo">memo</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
   
-    
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/TIL/react/2022/02/04/install.html" rel="permalink">초기 설치
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">React
-
-일단은 그냥 CRA 사용
-
-npx create-react-app [project name]
-cd [project name]
-npm install react-router-dom@6
-
-
-타입스크립트 기반 CRA
-
-npx create-react-app [project nam...</p>
-  </article>
-</div>
-
-  
-    
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/TIL/react/2022/01/26/memo.html" rel="permalink">리액트 메모
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">reducer 안에서 state를 바꾸고 리턴하지 말고
-state를 복사-&gt;수정-&gt; 수정된 값을 반환
-Object.assign, …imutable 라이브러리, …
-event.preventDefault(); //기본 동작 막기. a태그의 기본 동작 방지 등의 목적
-Crea...</p>
-  </article>
-</div>
-
-  
-    
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/TIL/jekyll/2022/01/25/welcome-to-jekyll.html" rel="permalink">Welcome to Jekyll!
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...</p>
-  </article>
-</div>
-
-  
-    
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/TIL/memo/2022/01/25/memo.html" rel="permalink">Memo
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">반응형 웹 디자인 간단 자료
-</p>
-  </article>
-</div>
-
-  
-    
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/TIL/memo/2022/01/24/install-jekyll-on-mac.html" rel="permalink">Install Jekyll on Mac
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">ERROR: While executing gem … (Errno::ENOTEMPTY)
-Directory not empty @ dir_s_rmdir - /Users/spo/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/bundler-2.3.5
-
-...</p>
-  </article>
-</div>
-
-  
-</div>
-
-
-
-
   </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Flutter CLI">
+    <meta itemprop="description" content="```flutter run -d web-serverflutter run -d web-server –web-renderer html">
+    <meta itemprop="datePublished" content="2022-02-14T10:27:35+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Flutter CLI
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>flutter run -d web-server
+flutter run -d web-server --web-renderer html
+
+flutter build web
+flutter build web --web-renderer html
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-02-14T10:27:35+09:00">February 14, 2022</time></p>
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/TIL/react/2022/02/04/install.html" class="pagination--pager" title="초기 설치
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
 </div>
+
     </div>
 
     

@@ -20,6 +20,10 @@ docs:
     children:
       - title: "temp"
         url: /memo/
+  - title: Flutter
+    children:
+      - title: "CLI"
+        url: /flutter/2022/02/14/cli
   - title: Memo
     children:
       - title: "memo"
